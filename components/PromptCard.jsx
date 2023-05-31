@@ -1,8 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 
 const PromptCard = ({ post, handleTagClick }) => {
+
+  const [copied, setCopied] = useState("");
+
+  const handleCopy = () => {
+    setCopied(post.prompt);
+    navigator.clipboard.writeText(post.prompt);
+    setTimeout(() => setCopied(false), 3000);
+  };
 
   return (
     <div className="prompt_card">
@@ -26,6 +35,19 @@ const PromptCard = ({ post, handleTagClick }) => {
               {post.creator.email}
             </p>
           </div>
+        </div>
+
+        <div className="copy_btn" onClick={handleCopy}>
+          <Image
+            src={
+              copied === post.prompt
+                ? "/assets/icons/tick.svg"
+                : "/assets/icons/copy.svg"
+            }
+            alt={copied === post.prompt ? "tick_icon" : "copy_icon"}
+            width={12}
+            height={12}
+          />
         </div>
       </div>
 
