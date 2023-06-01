@@ -1,6 +1,6 @@
 import PromptCard from "./PromptCard";
 
-const Profile = ({ name, desc, data }) => {
+const Profile = ({ name, desc, data, handleEdit }) => {
   return (
     <section className="w-full">
       <h1 className="head_text text-left">
@@ -13,6 +13,7 @@ const Profile = ({ name, desc, data }) => {
           <PromptCard
             key={post._id}
             post={post}
+            handleEdit={() => handleEdit && handleEdit(post)}
           />
         ))}
       </div>
