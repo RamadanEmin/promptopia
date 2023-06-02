@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 import { usePathname } from "next/navigation";
 
-const PromptCard = ({ post, handleEdit, handleTagClick }) => {
+const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
   const { data: session } = useSession();
   const pathName = usePathname();
 
@@ -70,6 +70,12 @@ const PromptCard = ({ post, handleEdit, handleTagClick }) => {
             onClick={handleEdit}
           >
             Edit
+          </p>
+          <p
+            className="font-inter text-sm orange_gradient cursor-pointer"
+            onClick={handleDelete}
+          >
+            Delete
           </p>
         </div>
       )}
