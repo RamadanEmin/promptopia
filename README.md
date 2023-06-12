@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## ERA_Promptopia
 
-## Getting Started
+You can view the site here
+[Click Me](https://promptopia-kohl-alpha.vercel.app/)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## :books: Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [About](#raised_hands-about)
+- [Technologies used](#gear-technologies-used)
+- [Features](#pushpin-features)
+- [How to use this App](#before-you-start)
+- [Author](#star-author)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## :raised_hands: About
+ - Promptopia is a web application designed to inspire and facilitate creative writing. Whether you're a seasoned writer looking for fresh ideas or a beginner trying to get started, Promptopia provides a collection of writing prompts to spark your imagination.
+   
+## :gear: Technologies used
+- Next.js 13
+- React
+- MongoDB
+- Tailwind
+- Axios
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## :pushpin: Features
+<ul>
+  <li>Home page</li>
+  <li>Create prompt page</li>
+  <li>Edit prompt page</li>
+  <li>Profile page</li>
+</ul>
 
-## Learn More
+## How to use this App?
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone this **repository** to your local computer.
+2. Open **terminal** in root directory.
+3. Type and Run `npm install` or `yarn install`.
+4. Once packages are installed, you can start this app using `npm run dev`.
+5. Sign in Google Cloud, create project and take your GOOGLE_ID and GOOGLE_CLIENT_SECRET key
+6. Sign in Mongodb Atlas, create cluster and take your MONGODB_URI key
+7. Create your NEXTAUTH_SECRET key and add in your .env fail
+8. Now app is fully configured and you can start using this app :+1:.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## :star: Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Ramadan Emin
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src="/images/pic1.png"  width= 800px height= 500px>
+<img src="/images/pic2.png"  width= 800px height= 500px>
+<img src="/images/pic3.png"  width= 800px height= 500px>
+<img src="/images/pic4.png"  width= 290px height= 590px>
